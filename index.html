@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Béranger Cassard - Front-End Developer CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            background-image: url(./assets/images/beranger.png);
+            background-position: 50% 35%;
+           backdrop-filter: 4px;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            color: rgb(239, 239, 239);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .header h2 {
+            margin: 5px 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .contact {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .contact a {
+            color: #1e3c72;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h3 {
+            color: #2a5298;
+            border-bottom: 2px solid #b52e2e;
+            padding-bottom: 5px;
+        }
+        .skills, .languages, .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill, .language, .certification {
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        .experience, .education {
+            margin: 10px 0;
+        }
+        .experience h4, .education h4 {
+            color: #1e3c72;
+            margin: 5px 0;
+        }
+        .experience p, .education p {
+            margin: 2px 0;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .header h2 {
+                font-size: 16px;
+            }
+        }
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 100%;
+                margin: 0;
+                padding: 20px;
+                box-shadow: none;
+            }
+            .header {
+                background: none;
+                color: black;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+            .header h1 {
+                color: #1e3c72;
+            }
+            .header h2 {
+                color: #2a5298;
+            }
+            .contact {
+                margin: 10px 0;
+            }
+            .contact a {
+                color: black;
+                text-decoration: none;
+            }
+            .section h3 {
+                color: #1e3c72;
+                border-bottom: 1px solid #1e3c72;
+            }
+            .skill, .language, .certification {
+                background: none;
+                border: 1px solid #1e3c72;
+                color: #1e3c72;
+            }
+            .experience h4, .education h4 {
+                color: #1e3c72;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Béranger Cassard</h1>
+            <h2>Front-End Developer | React & Tailwind | Based in Ho Chi Minh</h2>
+            <p>Bilingual FR/EN | Project Manager Mindset | District 1, Ho Chi Minh City, Vietnam</p>
+        </div>
+        <div class="contact">
+            <p><strong>Contact:</strong> +84 348 098 794 | <a href="mailto:beranger.cassard@gmail.com">beranger.cassard@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/cassardb" target="_blank">linkedin.com/in/cassardb</a> | <a href="https://github.com/BerangerCassard" target="_blank">github.com/BerangerCassard</a></p>
+        </div>
+        <div class="section">
+            <h3>Summary</h3>
+            <p>French front-end developer based in Ho Chi Minh City with a strong background in React, Tailwind, and TypeScript. Double-skilled: graduated from a top 10 French business school and completed professional web development training, blending technical execution with project management. Passionate about creating responsive, accessible, and scalable web applications. Open to remote or local opportunities in Saigon, especially within tech startups, digital agencies, or product-oriented companies.</p>
+        </div>
+        <div class="section">
+            <h3>Top Skills</h3>
+            <div class="skills">
+                <span class="skill">Tailwind CSS</span>
+                <span class="skill">Redux.js</span>
+                <span class="skill">TypeScript</span>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Languages</h3>
+            <div class="languages">
+                <span class="language">Vietnamien (Elementary)</span>
+                <span class="language">Espagnol (Limited Working)</span>
+                <span class="language">French (Native or Bilingual)</span>
+                <span class="language">English (Professional Working)</span>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Certifications</h3>
+            <div class="certifications">
+                <span class="certification">Create an Advanced Web App with React and Redux Skill Path</span>
+                <span class="certification">Learn React Course</span>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Experience</h3>
+            <div class="experience">
+                <h4>Freelance Front-End Developer</h4>
+                <p><em>Freelance | April 2025 - Present (2 months)</em></p>
+                <p>Refined skills in React.js, Redux, and TypeScript through various projects.</p>
+            </div>
+            <div class="experience">
+                <h4>Codecademy</h4>
+                <p><em>Refinement React.js, Redux, TypeScript | 2023 - March 2025 (2 years)</em></p>
+                <p>Completed 13 React/Redux projects on my premium account(e.g., Flashcard App, Expense Tracker) and 7 TypeScript projects (e.g., Park Service Volunteer Appreciation Program).</p>
+            </div>
+            <div class="experience">
+                <h4>OpenClassrooms</h4>
+                <p><em>Front-end web developer projects | January 2020 - January 2022 (2 years 1 month)</em></p>
+                <p>Completed 11 projects from basic JavaScript to a fully functional React application, with mentorship and TypeScript training.</p>
+            </div>
+            <div class="experience">
+                <h4>Business Developer | Dirox IT Outsourcing</h4>
+                <p><em>September 2016 - April 2018 (1 year 8 months) | Ho Chi Minh, Vietnam</em></p>
+                <p>Optimized sales processes, redesigned company website with WordPress, and conducted global email campaigns.</p>
+            </div>
+            <div class="experience">
+                <h4>Business Developer Assistant | CMA CGM</h4>
+                <p><em>July 2014 - October 2014 (4 months) | Ho Chi Minh, Vietnam</em></p>
+                <p>Developed intermodal solutions and resolved container import flow anomalies.</p>
+            </div>
+            <div class="experience">
+                <h4>Project Manager Assistant | Dassault Systemes</h4>
+                <p><em>March 2013 - August 2013 (6 months) | Vélizy-Villacoublay, France</em></p>
+                <p>Developed management support tools for activity and cost control at Dassault Aviation and Safran.</p>
+            </div>
+            <div class="experience">
+                <h4>Junior Project Manager | CB'a - WPP Group</h4>
+                <p><em>September 2012 - February 2013 (6 months) | Levallois-Perret, France</em></p>
+                <p>Led redesign of international brands for clients like Pepsico and Nestlé, managing budgets and creative teams.</p>
+            </div>
+            <div class="experience">
+                <h4>Co Founder & Vice President & Creative Manager | Crazycity by Le Citadingue</h4>
+                <p><em>September 2011 - May 2012 (9 months) | Marseille, France</em></p>
+                <p>Managed production of a 90-page English city guide with a €15,000 budget and 30,000 copies circulation.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Education</h3>
+            <div class="education">
+                <h4>Codecademy</h4>
+                <p><em>Front-end Developer skills path | 2023 - 2025</em></p>
+            </div>
+            <div class="education">
+                <h4>OpenClassrooms</h4>
+                <p><em>Junior Front-end Developer | 2020 - 2022</em></p>
+            </div>
+            <div class="education">
+                <h4>KEDGE Business School</h4>
+                <p><em>Master Grande Ecole, Marketing & Sales Development | 2011 - 2016</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
